@@ -2,18 +2,6 @@ var informationFlow = [];
 
 $(document).ready(function() {
 
-  $('li').hover(function(){
-    if (!$(this).hasClass('selected')){
-      $(this).css('background-color', '#BFBFBF');
-      $(this).children().css('background-color', '#BFBFBF');
-    }
-  }, function(){
-    if (!$(this).hasClass('selected')){
-      $(this).css('background-color', '#f2f2f2');
-      $(this).children().css('background-color', '#f2f2f2');
-    }
-  });
-
   $('#submit').click(function(){
     var chosen_list = [];
     var chosen = $('input[type=radio]:checked')
