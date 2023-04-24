@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -20,108 +20,117 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center">How to Get a Job in Tech &mdash; Cheat Sheet</h1>
 
-        <header id="prologue">
+        <header id="prologue" class="mb-4">
             <h4 class="text-center">
                 Interested in getting an internship? Here are a few things to look
                 out for to set yourself up for success when looking to get an internship in tech!
             </h4>
         </header>
 
-        <div class="card border-primary mb-3">
-            <div class="card-body">
-            <h3 class="card-title">What kind of job are you looking for?</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="intern" id="intern">
-                <label class="form-check-label" for="intern">
-                    Internship
-                </label>
+        <div id="kindOfJob" class="card border-flat">
+            <div class="card-body p-3">
+                <h3 class="card-title">What kind of job are you looking for?</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="intern" id="intern">
+                    <label class="form-check-label" for="intern">
+                        Internship
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fte" id="fte">
+                    <label class="form-check-label" for="fte">
+                        Full Time Job
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idk" id="idk">
+                    <label class="form-check-label" for="idk">
+                        I don't know
+                    </label>
+                </div>
+
+                <button class="btn btn-light" id="submitJobType">Submit</button>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="fte" id="fte">
-                <label class="form-check-label" for="fte">
-                    Full Time Job
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="idk" id="idk">
-                <label class="form-check-label" for="idk">
-                    I don't know
-                </label>
-            </div>
-            
-            <button class="btn btn-default" id="submit">Submit</button>
         </div>
+
+        <div id="timeTilGrad" class="card border-flat">
+            <div class="card-body p-3">
+                <h3 class="card-title">When do you expect to graduate?</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="underOne" id="underOne">
+                    <label class="form-check-label" for="underOne">
+                        In less than a year
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="onetwo" id="onetwo">
+                    <label class="form-check-label" for="onetwo">
+                        In 1-2 years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="twothree" id="twothree">
+                    <label class="form-check-label" for="twothree">
+                        In 2-3 years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="overthree" id="overthree">
+                    <label class="form-check-label" for="overthree">
+                        In more than 3 years
+                    </label>
+                </div>
+                
+
+                <button class="btn btn-light" id="submitTimeToGrad">Submit</button>
+            </div>
         </div>
-        
-            <div class="question">
-                <h3>When do you expect to graduate?</h3>
-                <ul>
-                    <li>
-                        <label for="1a">
-                            <span class="check_img"></span>
-                            <input type="radio" name="q1" id="1a" value="underOne">
-                            In less than a year
-                        </label>
-                    </li>
-                    <li>
-                        <label for="1b">
-                            <span class="check_img"></span>
-                            <input type="radio" name="q1" id="1b" value="onetwo">
-                            In 1-2 years
-                        </label>
-                    </li>
-                    <li>
-                        <label for="1c">
-                            <span class="check_img"></span>
-                            <input type="radio" name="q1" id="1c" value="twothree">
-                            In 2-3 years
-                        </label>
-                    </li>
-                    <li>
-                        <label for="1d">
-                            <span class="check_img"></span>
-                            <input type="radio" name="q1" id="1d" value="threefour">
-                            In 3-4 years
-                        </label>
-                    </li>
-                    <li>
-                        <label for="1e">
-                            <span class="check_img"></span>
-                            <input type="radio" name="q1" id="1e" value="overFour">
-                            In more than 4 years
-                        </label>
-                    </li>
-                </ul>
+
+        <div id="timeTilGradSummer" class="card border-flat">
+            <div class="card-body p-3">
+                <h3 class="card-title">Is there a summer between now and your graduation date?</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="summerBtwn" id="summerBtwn">
+                    <label class="form-check-label" for="summerBtwn">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="noSummer" id="noSummer">
+                    <label class="form-check-label" for="noSummer">
+                        No
+                    </label>
+                </div>
+                <button class="btn btn-light" id="submitSummerBtwn">Submit</button>
             </div>
-            
-            <div class="question">
-                <h3>What course background do you have?</h3>
-                <ul>
-                    <li>
-                        <label for="3a">
-                            <span class="check_img"></span>
-                            <input type="checkbox" name="q3" id="3a" value="intro">
-                            Intro to CS
-                        </label>
-                    </li>
-                    <li>
-                        <label for="3b">
-                            <span class="check_img"></span>
-                            <input type="checkbox" name="q3" id="3b" value="dsa">
-                            Data structures
-                        </label>
-                    </li>
-                    <li>
-                        <label for="3c">
-                            <span class="check_img"></span>
-                            <input type="checkbox" name="q3" id="3c" value="algo">
-                            Algorithms
-                        </label>
-                    </li>
-                </ul>
+        </div>
+
+        <div id="courseworkTaken" class="card border-flat">
+            <div class="card-body p-3">
+                <h3 class="card-title">What courses have you taken?</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="intro" id="intro">
+                    <label class="form-check-label" for="intro">
+                        Intro to CS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="datastructures" id="datastructures">
+                    <label class="form-check-label" for="datastructures">
+                        Data Structures
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="algo" id="algo">
+                    <label class="form-check-label" for="algo">
+                        Algorithms
+                    </label>
+                </div>
+                <button class="btn btn-light" id="submitCourseworkTaken">Submit</button>
             </div>
-        
-        
+        </div>
+
+
 
         <div id="fullTimeJob" class="info">
             <h2></h2>
