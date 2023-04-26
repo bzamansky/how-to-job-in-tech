@@ -6,3 +6,8 @@ body {
 h1 {
 	font-family: 'Lora', serif;
 }
+
+/* #D5C7BC, #DEE8D5 */
+.info {
+	background-color: #DEE8D5;
+}
