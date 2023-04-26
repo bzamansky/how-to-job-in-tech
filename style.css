@@ -11,3 +11,15 @@ h1 {
 .info {
 	background-color: #DEE8D5;
 }
+
+#resumeExamples, #applicationsFindJobs {
+	background-color: #D5C7BC;
+}
+
+.card {
+	display: none;
+}
+
+#kindOfJob {
+	display: block;
+}
