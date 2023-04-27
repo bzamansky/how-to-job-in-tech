@@ -8,7 +8,7 @@ h1 {
 }
 
 /* #D5C7BC, #DEE8D5 */
-.info {
+.info .card{
 	background-color: #DEE8D5;
 }
 
@@ -16,7 +16,7 @@ h1 {
 	background-color: #D5C7BC;
 }
 
-.card {
+.info, .question  {
 	display: none;
 }
 
