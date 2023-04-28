@@ -73,6 +73,14 @@ $(document).ready(function() {
     ind++;
   })
 
+  $("#seeAll").click(function(){
+    for(var i = 0; i < informationFlow.length; i++) {
+      $(informationFlow[i]).css('display','block');
+    }
+    $(".question").css('display','none');
+    $("#kindOfJob").css('display','none');
+  });
+
 });
 
 function introOnly() {
