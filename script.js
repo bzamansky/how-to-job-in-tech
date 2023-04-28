@@ -1,5 +1,6 @@
-var informationFlow = ["#jobProcess","#resumeIntro","#resumeRules","#resumeExamples","#applicationsIntro","#applicationsFindJobs","#interviewsIntro","#interviewAdvice","#interviewingPriorities","#interviewsOtherTypes","#interviewsBehavioral"];
-var chosens = []
+var informationFlow = ["#jobProcess","#resumeIntro","#resumeRules","#resumeExamples","#applicationsIntro","#applicationsFindJobs","#interviewsIntro","#interviewAdvice","#interviewingPriorities","#interviewsOtherTypes","#interviewsBehavioral", "#end"];
+var chosens = [];
+var ind = 0;
 
 $(document).ready(function() {
   
@@ -67,6 +68,11 @@ $(document).ready(function() {
 
   });
 
+  $("i").not(".whyintern").click(function() {
+    $(informationFlow[ind]).css('display','block');
+    ind++;
+  })
+
 });
 
 function introOnly() {
@@ -93,5 +99,5 @@ function introPlus() {
   var hasAlgo = chosens.includes('algo');
   var hasNone = chosens.includes('none');
 
-  return hasIntro && (hasDS || hasAlgo);
+  return (hasDS || hasAlgo);
 }

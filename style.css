@@ -12,7 +12,7 @@ h1 {
 	background-color: #DEE8D5;
 }
 
-#resumeExamples, #applicationsFindJobs {
+#resumeExamples .card, #applicationsFindJobs .card {
 	background-color: #D5C7BC;
 }
 
